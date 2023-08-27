@@ -98,7 +98,7 @@ void on_dwm_evt(dwm_evt_t *p_evt)
                   sprintf(strIOTanALL,"%04X%4d%04X%4d%04X%4d%04X%4d%1d", idAn[0],distAn[0], idAn[1],distAn[1],idAn[2],distAn[2],idAn[3],distAn[3], totalAnCount); 
 
                   /* transmit [Iot data-stream 33 bytes] towards Gateway over UWB channel */
-                  dwm_usr_data_write(strIOTanALL, 16+16+1, 1);
+                  dwm_usr_data_write(strIOTanALL, 33, 1);
                   /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 		
                   //printf("\n");
